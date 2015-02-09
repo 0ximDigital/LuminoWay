@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="luminoway" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\Windows\\VisualStudio\ Projects\\LuminoWay\\LuminoWay\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\Windows\\VisualStudio\ Projects\\LuminoWay\\LuminoWay\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="Add write permission to App_Data Folder" description="Add write permission to App_Data folder" value="luminoway/App_Data" tags="Hidden">
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\Windows\\VisualStudio\ Projects\\LuminoWay\\LuminoWay\\obj\\Release\\Package\\PackageTmp\\App_Data$" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=(LocalDb)\v11.0;Initial Catalog=aspnet-LuminoWay;Integrated Security=True" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\Windows\\VisualStudio\ Projects\\LuminoWay\\LuminoWay\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="LuminoWay-Web.config Connection String" description="" value="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\luminoway.mdf;Integrated Security=True" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\Windows\\VisualStudio\ Projects\\LuminoWay\\LuminoWay\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='LuminoWay']/@connectionString" />
+  </parameter>
+</parameters>
